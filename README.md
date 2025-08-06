@@ -74,67 +74,50 @@ cp .env.example .env
 ## Deployment
 
 ### Prerequisites
+- Ubuntu Server 20.04+ or similar
 - Node.js 18+ and npm
-- Supabase account and project
-- SendGrid account (for email notifications)
-- Docker (optional, for containerized deployment)
+- Nginx
+- PM2 for process management
+- Supabase account (database)
 
-### Production Deployment
+### Quick Deployment
 
-#### Option 1: Traditional Deployment (VPS/Cloud VM)
-
-1. **Clone the repository**
+1. **Clone and setup:**
 ```bash
-git clone https://github.com/yourusername/gep-system.git
-cd gep-system
+git clone https://github.com/mikedrai/gep-partner-system.git
+cd gep-partner-system
 ```
 
-2. **Setup Backend**
+2. **Configure environment:**
 ```bash
-cd backend
-npm install --production
-npm run build  # if build script exists
-NODE_ENV=production npm start
+# Copy and edit the production environment files
+cp .env.production.port4000 .env
+cp frontend/.env.production.port4000 frontend/.env
+# Edit with your credentials
 ```
 
-3. **Setup Frontend**
+3. **Run deployment script:**
 ```bash
-cd frontend
-npm install
-npm run build
-# Serve the build folder with nginx or similar
+./deploy-port-4000.sh YOUR_SERVER_IP
 ```
 
-#### Option 2: Docker Deployment
+### Manual Deployment
 
-```bash
-docker-compose up -d
-```
+See `DEPLOYMENT_PORT_4000.md` for detailed manual deployment instructions.
 
-#### Option 3: Platform-as-a-Service (Recommended)
+### Service Architecture
 
-**Backend (Render/Railway/Heroku):**
-- Connect GitHub repository
-- Set environment variables
-- Deploy backend folder
+- **Port 4000**: Nginx serves frontend and proxies API
+- **Port 4001**: Node.js backend API (internal)
+- **Database**: Supabase (cloud hosted)
 
-**Frontend (Vercel/Netlify):**
-- Connect GitHub repository
-- Set build command: `npm run build`
-- Set publish directory: `build`
-- Add environment variables
+### Access Points
 
-### Database Setup
+- Frontend: `http://your-server:4000`
+- API: `http://your-server:4000/api`
 
-1. Create a Supabase project
-2. Run migrations:
-```bash
-cd supabase
-supabase db push
-```
+### Monitoring
 
-### Monitoring & Maintenance
-
-- Check logs: `backend/logs/`
-- Monitor API health: `GET /health`
-- Database backups: Configure in Supabase dashboard
+- Check status: `pm2 status`
+- View logs: `pm2 logs gep-backend`
+- Monitor resources: `pm2 monit`

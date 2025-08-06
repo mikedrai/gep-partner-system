@@ -9,6 +9,9 @@ node_modules/
 .env.test.local
 .env.production.local
 *.env
+!.env.example
+!.env.production.port4000
+!frontend/.env.production.port4000
 
 # Logs
 logs/
@@ -46,8 +49,11 @@ coverage/
 *.lcov
 .nyc_output/
 
-# Database dumps
+# Database dumps and data files
 *.sql
+*.csv
+*.xlsx
+*.docx
 !supabase/migrations/*.sql
 !supabase/seed.sql
 
@@ -79,16 +85,17 @@ ehthumbs.db
 *.backup
 *.bak
 
-# Excel/Word temporary files
-~$*.xlsx
-~$*.docx
-~$*.xls
-~$*.doc
-
-# CSV data files (if sensitive)
-backend/*.csv
-
 # Local database files
 *.db
 *.sqlite
 *.sqlite3
+
+# Temporary deployment scripts
+FIX_*.md
+COMPLETE_*.md
+MANUAL_*.md
+SERVER_*.md
+QUICK_*.md
+NGINX_*.md
+VERIFY_*.sh
+fix-*.sh
