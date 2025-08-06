@@ -1,0 +1,1459 @@
+{
+  "file_path": "/Users/mtz/Projects/GEP/Gep DEMO DATA.xlsx",
+  "sheet_names": [
+    "Client",
+    "Installation",
+    "Contract",
+    "Contract Service (Project)",
+    "Installation Services (Sub Pro)",
+    "Visits",
+    "Resources"
+  ],
+  "sheet_structures": {
+    "Client": {
+      "shape": [
+        1,
+        9
+      ],
+      "columns": {
+        "Group Name": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "DEMO HELLAS A.E.E."
+          ],
+          "potential_primary_key": true
+        },
+        "Company Code": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "C000011"
+          ],
+          "potential_primary_key": true
+        },
+        "Active Customer": {
+          "dtype": "int64",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            1
+          ],
+          "potential_primary_key": true
+        },
+        "Company Name": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+          ],
+          "potential_primary_key": true
+        },
+        "Company Type": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u03a5\u03a0\u0397\u03a1\u0395\u03a3\u0399\u0395\u03a3 \u03a3\u03a5\u039d\u03a4\u0397\u03a1\u0397\u03a3\u0397\u03a3 "
+          ],
+          "potential_primary_key": true
+        },
+        "AFM": {
+          "dtype": "int64",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            54835232
+          ],
+          "potential_primary_key": true
+        },
+        "Account Manager": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u039c\u0395\u0393\u039a\u039f\u03a5\u039b\u0397\u03a3 \u03a3\u03a4\u0391\u03a5\u03a1\u039f\u03a3"
+          ],
+          "potential_primary_key": true
+        },
+        "CAD Responsible": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u039b\u0391\u0396\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a3 \u0395\u03a5\u03a3\u03a4\u0391\u0398\u0399\u039f\u03a3"
+          ],
+          "potential_primary_key": true
+        },
+        "Finance Responsible": {
+          "dtype": "object",
+          "non_null_count": 1,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u039a\u039f\u03a1\u03a6\u0391\u039b\u0391 \u0391\u039d\u0394\u03a1\u039f\u039d\u0399\u039a\u0397"
+          ],
+          "potential_primary_key": true
+        }
+      }
+    },
+    "Installation": {
+      "shape": [
+        7,
+        13
+      ],
+      "columns": {
+        "Installation Code": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "INST00029",
+            "INST25442",
+            "INST25445",
+            "INST25451",
+            "INST32836"
+          ],
+          "potential_primary_key": true
+        },
+        "Description": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "\u039b\u0395\u03a9\u03a6. \u03a3\u03a5\u0393\u0393\u03a1\u039f\u03a5 320 - \u03a0\u03a1\u039f\u0397\u0393\u039f\u03a5\u039c\u0395\u039d\u0397 \u0394\u0399\u0395\u03a5\u0398\u03a5\u039d\u03a3\u0397 test",
+            "\u039c\u0399\u03a7\u0391\u039b\u0391\u039a\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a5 98 -  (\u0395\u039d\u03a4\u039f\u03a3 \u0391\u03a7\u0391-\u039a\u03a5\u03a1\u0399\u0391\u039a\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a3 \u03a0.)",
+            "\u0397\u039b\u0399\u0391 \u0397\u039b\u0399\u039f\u03a5 36-37 -  (\u0395\u039d\u03a4\u039f\u03a3 -\u03a3\u03a9\u039a\u039f\u03a3 \u039a.)",
+            "\u03a0\u0395\u0399\u03a1\u0391\u0399\u03a9\u03a3 247-249 -  (\u0395\u039d\u03a4\u039f\u03a3 \u039a\u0391\u03a4\u03a3\u039f\u03a5\u039d\u0397\u03a3 \u0391.)",
+            "\u03a3\u039f\u03a6\u039f\u039a\u039b\u0395\u039f\u03a5\u03a3 11 -  (\u0395\u039d\u03a4\u039f\u03a3 \u03a4\u03a1\u0391\u03a0\u0395\u0396\u0391\u03a3  BANK-\u039a\u039f"
+          ],
+          "potential_primary_key": true
+        },
+        "Installation Category": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "C",
+            "C",
+            "C",
+            "C",
+            "C"
+          ],
+          "potential_primary_key": false
+        },
+        "Installation is Active": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "potential_primary_key": false
+        },
+        "Employees A Per Installation": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "potential_primary_key": false
+        },
+        "Employees B Per Installation": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "potential_primary_key": false
+        },
+        "Employees C Per Installation": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            46,
+            1,
+            1,
+            1,
+            1
+          ],
+          "potential_primary_key": false
+        },
+        "Employees Per Installation": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            46,
+            1,
+            1,
+            1,
+            1
+          ],
+          "potential_primary_key": false
+        },
+        "Company Code": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "C000011",
+            "C000011",
+            "C000011",
+            "C000011",
+            "C000011"
+          ],
+          "potential_primary_key": false
+        },
+        "Address": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "\u039b\u0395\u03a9\u03a6. \u03a3\u03a5\u0393\u0393\u03a1\u039f\u03a5 350",
+            "\u039c\u0399\u03a7\u0391\u039b\u0391\u039a\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a5 48",
+            "\u0397\u039b\u0399\u0391 \u0397\u039b\u0399\u039f\u03a5 35-37",
+            "\u03a0\u0395\u0399\u03a1\u0391\u0399\u03a9\u03a3 247-249",
+            "\u03a3\u039f\u03a6\u039f\u039a\u039b\u0395\u039f\u03a5\u03a3 11"
+          ],
+          "potential_primary_key": true
+        },
+        "KEPEK Name": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            "\u03a0\u0395\u03a1\u0399\u03a6. \u0394/\u039d\u03a3\u0397 \u0395\u0391\u03a5\u0395 \u0391\u0398\u0397\u039d\u03a9\u039d",
+            "\u03a0\u0395\u03a1\u0399\u03a6. \u0394/\u039d\u03a3\u0397 \u0395\u0391\u03a5\u0395 \u0391\u0398\u0397\u039d\u03a9\u039d",
+            "\u03a0\u0395\u03a1\u0399\u03a6. \u0394/\u039d\u03a3\u0397 \u0395\u0391\u03a5\u0395 \u0391\u0398\u0397\u039d\u03a9\u039d",
+            "\u03a0\u0395\u03a1\u0399\u03a6. \u0394/\u039d\u03a3\u0397 \u0395\u0391\u03a5\u0395 \u0391\u0398\u0397\u039d\u03a9\u039d",
+            "\u03a0\u0395\u03a1\u0399\u03a6. \u0394/\u039d\u03a3\u0397 \u0395\u0391\u03a5\u0395 \u0391\u0398\u0397\u039d\u03a9\u039d"
+          ],
+          "potential_primary_key": false
+        },
+        "Post Code": {
+          "dtype": "int64",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            17674,
+            11528,
+            11743,
+            17778,
+            10557
+          ],
+          "potential_primary_key": true
+        },
+        "Installation Work Hours": {
+          "dtype": "object",
+          "non_null_count": 7,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "\u0394\u0395\u03a5\u03a4\u0395\u03a1\u0391 - \u03a0\u0391\u03a1\u0391\u0391\u03a3\u039a\u0395\u03a5\u0397 09:00-17:00",
+            "\u0394\u0395\u03a5T.-\u03a0\u0391\u03a1.: 08:30-16:30",
+            "\u0394\u0395\u03a5\u03a4\u0395\u03a1\u0391 - \u03a0\u0391\u03a1\u0391\u0391\u03a3\u039a\u0395\u03a5\u0397 09:00-17:00",
+            "\u0394\u0395\u03a5T.-\u03a0\u0391\u03a1.: 08:00-16:00",
+            "\u0394\u0395\u03a5\u03a4\u0395\u03a1\u0391 - \u03a0\u0391\u03a1\u0391\u0391\u03a3\u039a\u0395\u03a5\u0397 09:00-17:00"
+          ],
+          "potential_primary_key": false
+        }
+      }
+    },
+    "Contract": {
+      "shape": [
+        5,
+        11
+      ],
+      "columns": {
+        "Contract Code": {
+          "dtype": "object",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "sample_values": [
+            "CON000010",
+            "CON001601",
+            "CON015386",
+            "CON022132",
+            "CON022133"
+          ],
+          "potential_primary_key": true
+        },
+        "Company Code": {
+          "dtype": "object",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "C000011",
+            "C000011",
+            "C000011",
+            "C000011",
+            "C000011"
+          ],
+          "potential_primary_key": false
+        },
+        "Company Name": {
+          "dtype": "object",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+          ],
+          "potential_primary_key": false
+        },
+        "Active Contract": {
+          "dtype": "int64",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "potential_primary_key": false
+        },
+        "Characterization": {
+          "dtype": "object",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u039a\u03a5\u03a1\u0399\u0391",
+            "\u039a\u03a5\u03a1\u0399\u0391",
+            "\u039a\u03a5\u03a1\u0399\u0391",
+            "\u039a\u03a5\u03a1\u0399\u0391",
+            "\u039a\u03a5\u03a1\u0399\u0391"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Name": {
+          "dtype": "object",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 5,
+          "sample_values": [
+            "\u0399\u0395 DEMO HELLAS A.E.E",
+            "\u03a4\u0391 DEMO HELLAS A.E.E",
+            "THE DREAM",
+            "\u0393\u0395\u0395\u039a - DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "\u039c\u0395\u03a4\u03a1_\u03a0\u0391\u03a1 - DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+          ],
+          "potential_primary_key": true
+        },
+        "Contract Start Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "2004-05-19 00:00:00",
+            "2004-05-26 00:00:00",
+            "2022-01-01 00:00:00",
+            "2025-07-08 00:00:00",
+            "2025-07-08 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract End Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            "2099-12-31 00:00:00",
+            "2099-12-31 00:00:00",
+            "2022-12-31 00:00:00",
+            "2099-12-31 00:00:00",
+            "2099-12-31 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Signed Date AADE": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "2004-05-19 00:00:00",
+            "2005-06-13 00:00:00",
+            "2022-06-16 00:00:00",
+            "2025-07-08 00:00:00",
+            "2025-07-08 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Value": {
+          "dtype": "float64",
+          "non_null_count": 4,
+          "null_count": 1,
+          "unique_count": 4,
+          "sample_values": [
+            11494.27,
+            6273.0,
+            1530.0,
+            670.0
+          ],
+          "potential_primary_key": false
+        },
+        "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7": {
+          "dtype": "int64",
+          "non_null_count": 5,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "potential_primary_key": false
+        }
+      }
+    },
+    "Contract Service (Project)": {
+      "shape": [
+        13,
+        8
+      ],
+      "columns": {
+        "Conrtact Code": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "CON000010",
+            "CON000010",
+            "CON000010",
+            "CON000010",
+            "CON000010"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Service Code": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "CON000010-1",
+            "CON000010-2",
+            "CON000010-3",
+            "CON000010-4",
+            "CON000010-5"
+          ],
+          "potential_primary_key": true
+        },
+        "Contract Service Start Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "2020-05-26 00:00:00",
+            "2021-05-26 00:00:00",
+            "2022-05-26 00:00:00",
+            "2023-05-26 00:00:00",
+            "2024-05-26 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Service End Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 8,
+          "sample_values": [
+            "2021-11-16 00:00:00",
+            "2022-05-25 00:00:00",
+            "2023-05-25 00:00:00",
+            "2024-05-25 00:00:00",
+            "2025-05-25 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Service Name": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2"
+          ],
+          "potential_primary_key": false
+        },
+        "Assigned Hours / Quantity": {
+          "dtype": "float64",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 9,
+          "sample_values": [
+            117.7,
+            83.46000000000001,
+            78.65,
+            77.2,
+            53.0
+          ],
+          "potential_primary_key": false
+        },
+        "Price Per UOM": {
+          "dtype": "int64",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 6,
+          "sample_values": [
+            22,
+            22,
+            22,
+            22,
+            28
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Service Revenue": {
+          "dtype": "float64",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            2589.4,
+            1836.1200000000001,
+            1730.3000000000002,
+            1698.4,
+            1484.0
+          ],
+          "potential_primary_key": true
+        }
+      }
+    },
+    "Installation Services (Sub Pro)": {
+      "shape": [
+        64,
+        13
+      ],
+      "columns": {
+        "Conrtact Code": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            "CON000010",
+            "CON000010",
+            "CON000010",
+            "CON000010",
+            "CON000010"
+          ],
+          "potential_primary_key": false
+        },
+        "(2) Service is active": {
+          "dtype": "int64",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "potential_primary_key": false
+        },
+        "Contract Service Code": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 11,
+          "sample_values": [
+            "CON000010-1",
+            "CON000010-1",
+            "CON000010-1",
+            "CON000010-1",
+            "CON000010-1"
+          ],
+          "potential_primary_key": false
+        },
+        "Installation Code": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "INST00029",
+            "INST25442",
+            "INST25445",
+            "INST25451",
+            "INST32836"
+          ],
+          "potential_primary_key": false
+        },
+        "Description": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 7,
+          "sample_values": [
+            "\u039b\u0395\u03a9\u03a6. \u03a3\u03a5\u0393\u0393\u03a1\u039f\u03a5 320 - \u03a0\u03a1\u039f\u0397\u0393\u039f\u03a5\u039c\u0395\u039d\u0397 \u0394\u0399\u0395\u03a5\u0398\u03a5\u039d\u03a3\u0397 test",
+            "\u039c\u0399\u03a7\u0391\u039b\u0391\u039a\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a5 98 -  (\u0395\u039d\u03a4\u039f\u03a3 \u0391\u03a7\u0391-\u039a\u03a5\u03a1\u0399\u0391\u039a\u039f\u03a0\u039f\u03a5\u039b\u039f\u03a3 \u03a0.)",
+            "\u0397\u039b\u0399\u0391 \u0397\u039b\u0399\u039f\u03a5 36-37 -  (\u0395\u039d\u03a4\u039f\u03a3 -\u03a3\u03a9\u039a\u039f\u03a3 \u039a.)",
+            "\u03a0\u0395\u0399\u03a1\u0391\u0399\u03a9\u03a3 247-249 -  (\u0395\u039d\u03a4\u039f\u03a3 \u039a\u0391\u03a4\u03a3\u039f\u03a5\u039d\u0397\u03a3 \u0391.)",
+            "\u03a3\u039f\u03a6\u039f\u039a\u039b\u0395\u039f\u03a5\u03a3 11 -  (\u0395\u039d\u03a4\u039f\u03a3 \u03a4\u03a1\u0391\u03a0\u0395\u0396\u0391\u03a3  BANK-\u039a\u039f"
+          ],
+          "potential_primary_key": false
+        },
+        "Service Name": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 2,
+          "sample_values": [
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2 \u0395\u03c1\u03b3\u03b1\u03c3\u03af\u03b1\u03c2"
+          ],
+          "potential_primary_key": false
+        },
+        "Service Start Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 8,
+          "sample_values": [
+            "2020-05-26 00:00:00",
+            "2020-05-26 00:00:00",
+            "2020-05-26 00:00:00",
+            "2020-05-26 00:00:00",
+            "2020-05-26 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Service End Date": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 9,
+          "sample_values": [
+            "2021-11-16 00:00:00",
+            "2021-05-25 00:00:00",
+            "2021-05-25 00:00:00",
+            "2021-05-25 00:00:00",
+            "2021-05-25 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Assigned Hours": {
+          "dtype": "float64",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 14,
+          "sample_values": [
+            112.7,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "potential_primary_key": false
+        },
+        "Programmed Hours (Sum of Visit Duration)": {
+          "dtype": "float64",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 17,
+          "sample_values": [
+            112.7,
+            0.92,
+            0.92,
+            0.92,
+            0.92
+          ],
+          "potential_primary_key": false
+        },
+        "Rerource Code": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "R00125",
+            "R00225",
+            "R00096",
+            "R00096",
+            "R01032"
+          ],
+          "potential_primary_key": false
+        },
+        "Resource Name": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "\u039a\u03a9\u03a3\u03a4\u0391\u03a3 \u039a\u03a9\u03a3\u03a4\u0391\u039a\u0397\u03a3",
+            " \u03a7\u0391\u03a1\u039f\u03a5\u039b\u0391 \u03a7\u0391\u03a1\u0391",
+            "\u0393\u0399\u0391\u039d\u039d\u0397\u03a3 \u0393\u03a5\u03a6\u03a4\u0391\u039a\u0397\u03a3",
+            "\u0393\u0399\u0391\u039d\u039d\u0397\u03a3 \u0393\u03a5\u03a6\u03a4\u0391\u039a\u0397\u03a3",
+            "\u039b\u0391\u039b\u039f\u03a3 \u0395\u03a5\u0391\u0393\u0393\u0395\u039b\u039f\u03a3"
+          ],
+          "potential_primary_key": false
+        },
+        "Service Status Name": {
+          "dtype": "object",
+          "non_null_count": 64,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u0398\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 & \u0391\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u0398\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 & \u0391\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u0398\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 & \u0391\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u0398\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 & \u0391\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u0398\u03b5\u03ce\u03c1\u03b7\u03c3\u03b7 & \u0391\u03c0\u03bf\u03c3\u03c4\u03bf\u03bb\u03ae"
+          ],
+          "potential_primary_key": false
+        }
+      }
+    },
+    "Visits": {
+      "shape": [
+        202,
+        11
+      ],
+      "columns": {
+        "Service Unique Code": {
+          "dtype": "int64",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 55,
+          "sample_values": [
+            13136345437232369,
+            13136345437332393,
+            13136345802232369,
+            13136345802332393,
+            13136346167332393
+          ],
+          "potential_primary_key": false
+        },
+        "Visit Code": {
+          "dtype": "int64",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 202,
+          "sample_values": [
+            632702,
+            632700,
+            765749,
+            764756,
+            909522
+          ],
+          "potential_primary_key": true
+        },
+        "Client Name": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 1,
+          "sample_values": [
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3",
+            "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+          ],
+          "potential_primary_key": false
+        },
+        "Rerource Code": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "R00096",
+            "R00142",
+            "R00096",
+            "R00142",
+            "R00142"
+          ],
+          "potential_primary_key": false
+        },
+        "Resource Name": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "\u0393\u0399\u0391\u039d\u039d\u0397\u03a3 \u0393\u03a5\u03a6\u03a4\u0391\u039a\u0397\u03a3",
+            "\u039c\u03a0\u0391\u039b\u039f\u03a3 \u039d\u0399\u039a\u039f\u039b\u0391\u03a3",
+            "\u0393\u0399\u0391\u039d\u039d\u0397\u03a3 \u0393\u03a5\u03a6\u03a4\u0391\u039a\u0397\u03a3",
+            "\u039c\u03a0\u0391\u039b\u039f\u03a3 \u039d\u0399\u039a\u039f\u039b\u0391\u03a3",
+            "\u039c\u03a0\u0391\u039b\u039f\u03a3 \u039d\u0399\u039a\u039f\u039b\u0391\u03a3"
+          ],
+          "potential_primary_key": false
+        },
+        "\u0397\u03bc\u03b5\u03c1\u03bf\u03bc\u03b7\u03bd\u03af\u03b1 \u0388\u03bd\u03b1\u03c1\u03be\u03b7\u03c2 \u0395\u03c0\u03af\u03c3\u03ba\u03b5\u03c8\u03b7\u03c2": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 193,
+          "sample_values": [
+            "2023-12-08 00:00:00",
+            "2024-05-20 00:00:00",
+            "2025-04-29 00:00:00",
+            "2025-02-27 00:00:00",
+            "2026-05-04 00:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Visit Start Time": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 41,
+          "sample_values": [
+            "15:00:00",
+            "15:00:00",
+            "15:00:00",
+            "15:15:00",
+            "09:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "\u0397\u03bc\u03b5\u03c1\u03bf\u03bc\u03b7\u03bd\u03af\u03b1 \u039b\u03ae\u03be\u03b7\u03c2 \u0395\u03c0\u03af\u03c3\u03ba\u03b5\u03c8\u03b7\u03c2": {
+          "dtype": "datetime64[ns]",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 200,
+          "sample_values": [
+            "2023-12-08 17:00:00",
+            "2024-05-20 17:00:00",
+            "2025-04-29 17:00:00",
+            "2025-02-27 17:15:00",
+            "2026-05-04 11:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "Visit End Time": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 48,
+          "sample_values": [
+            "17:00:00",
+            "17:00:00",
+            "17:00:00",
+            "17:15:00",
+            "11:00:00"
+          ],
+          "potential_primary_key": false
+        },
+        "(1) Duration": {
+          "dtype": "float64",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 39,
+          "sample_values": [
+            2.0,
+            2.0,
+            2.0,
+            2.0,
+            2.0
+          ],
+          "potential_primary_key": false
+        },
+        "Visit Status": {
+          "dtype": "object",
+          "non_null_count": 202,
+          "null_count": 0,
+          "unique_count": 4,
+          "sample_values": [
+            "\u03a0\u03c1\u03bf\u03c2 \u03ad\u03bd\u03b1\u03c1\u03be\u03b7",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03b7\u03c1\u03ce\u03b8\u03b7\u03ba\u03b5",
+            "\u03a0\u03c1\u03bf\u03c2 \u03ad\u03bd\u03b1\u03c1\u03be\u03b7",
+            "\u039f\u03bb\u03bf\u03ba\u03bb\u03b7\u03c1\u03ce\u03b8\u03b7\u03ba\u03b5",
+            "\u03a0\u03c1\u03bf\u03c2 \u03ad\u03bd\u03b1\u03c1\u03be\u03b7"
+          ],
+          "potential_primary_key": false
+        }
+      }
+    },
+    "Resources": {
+      "shape": [
+        13,
+        4
+      ],
+      "columns": {
+        "Resource Code": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "R00050",
+            "R00096",
+            "R00125",
+            "R00142",
+            "R00175"
+          ],
+          "potential_primary_key": true
+        },
+        "Resource Name": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 13,
+          "sample_values": [
+            "\u0394\u0391\u039d\u0395\u0396\u0397\u03a3 \u039d\u0399\u039a\u039f\u039b\u0391\u03a3",
+            "\u0393\u0399\u0391\u039d\u039d\u0397\u03a3 \u0393\u03a5\u03a6\u03a4\u0391\u039a\u0397\u03a3",
+            "\u039a\u03a9\u03a3\u03a4\u0391\u03a3 \u039a\u03a9\u03a3\u03a4\u0391\u039a\u0397\u03a3",
+            "\u039c\u03a0\u0391\u039b\u039f\u03a3 \u039d\u0399\u039a\u039f\u039b\u0391\u03a3",
+            "\u039a\u0391\u039a\u039f\u03a3 \u0393\u0399\u03a9\u03a1\u0393\u039f\u03a3"
+          ],
+          "potential_primary_key": true
+        },
+        "Specialty Name": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 9,
+          "sample_values": [
+            "\u03a0\u03b1\u03b8\u03bf\u03bb\u03cc\u03b3\u03bf\u03c2",
+            "\u0399\u03b1\u03c4\u03c1\u03cc\u03c2",
+            "\u03a0\u03b1\u03b9\u03b4\u03af\u03b1\u03c4\u03c1\u03bf\u03c2",
+            "\u039c\u03b7\u03c7\u03b1\u03bd\u03b9\u03ba\u03cc\u03c2 \u0394\u03bf\u03bc\u03b9\u03ba\u03ce\u03bd \u0388\u03c1\u03b3\u03c9\u03bd \u03a4\u0395",
+            "\u039c\u03b7\u03c7\u03b1\u03bd\u03bf\u03bb\u03cc\u03b3\u03bf\u03c2 \u039c\u03b7\u03c7\u03b1\u03bd\u03b9\u03ba\u03cc\u03c2"
+          ],
+          "potential_primary_key": false
+        },
+        "City": {
+          "dtype": "object",
+          "non_null_count": 13,
+          "null_count": 0,
+          "unique_count": 3,
+          "sample_values": [
+            "\u0393\u0395\u03a1\u0391\u039a\u0391\u03a3",
+            "\u0391\u0398\u0397\u039d\u0391",
+            "\u039a\u0391\u039b\u039b\u0399\u0398\u0395\u0391",
+            "\u0391\u0398\u0397\u039d\u0391",
+            "\u0393\u0395\u03a1\u0391\u039a\u0391\u03a3"
+          ],
+          "potential_primary_key": false
+        }
+      }
+    }
+  },
+  "potential_relationships": [
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Installation",
+      "to_column": "Installation is Active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Installation",
+      "to_column": "Employees C Per Installation",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Installation",
+      "to_column": "Employees Per Installation",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Contract",
+      "to_column": "Active Contract",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Contract",
+      "to_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Active Customer",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1"
+      ]
+    },
+    {
+      "from_sheet": "Client",
+      "from_column": "Company Name",
+      "to_sheet": "Visits",
+      "to_column": "Client Name",
+      "match_percentage": 100.0,
+      "common_values": [
+        "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Installation is Active",
+      "to_sheet": "Contract",
+      "to_column": "Active Contract",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Installation is Active",
+      "to_sheet": "Contract",
+      "to_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees A Per Installation",
+      "to_sheet": "Contract",
+      "to_column": "Active Contract",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees A Per Installation",
+      "to_sheet": "Contract",
+      "to_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees B Per Installation",
+      "to_sheet": "Contract",
+      "to_column": "Active Contract",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees B Per Installation",
+      "to_sheet": "Contract",
+      "to_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Installation is Active",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees A Per Installation",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation",
+      "from_column": "Employees B Per Installation",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "Active Contract",
+      "to_sheet": "Installation",
+      "to_column": "Installation is Active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "to_sheet": "Installation",
+      "to_column": "Installation is Active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "Active Contract",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "(2) Service is active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "Company Name",
+      "to_sheet": "Visits",
+      "to_column": "Client Name",
+      "match_percentage": 100.0,
+      "common_values": [
+        "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+      ]
+    },
+    {
+      "from_sheet": "Contract Service (Project)",
+      "from_column": "Conrtact Code",
+      "to_sheet": "Contract",
+      "to_column": "Contract Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "CON022132",
+        "CON000010",
+        "CON022133",
+        "CON001601"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "(2) Service is active",
+      "to_sheet": "Installation",
+      "to_column": "Installation is Active",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "Conrtact Code",
+      "to_sheet": "Contract",
+      "to_column": "Contract Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "CON000010",
+        "CON001601"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "(2) Service is active",
+      "to_sheet": "Contract",
+      "to_column": "Active Contract",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "(2) Service is active",
+      "to_sheet": "Contract",
+      "to_column": "\u0391\u03bf\u03c1\u03af\u03c3\u03c4\u03bf\u03c5 \u03a7\u03c1\u03cc\u03bd\u03bf\u03c5 \u03a3\u03cd\u03bc\u03b2\u03b1\u03c3\u03b7",
+      "match_percentage": 100.0,
+      "common_values": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "Rerource Code",
+      "to_sheet": "Resources",
+      "to_column": "Resource Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "R00670",
+        "R00929",
+        "R00770",
+        "R00125",
+        "R01032",
+        "R00050",
+        "R00096",
+        "R00175",
+        "R01261",
+        "R00225",
+        "R00609",
+        "R00142",
+        "R01080"
+      ]
+    },
+    {
+      "from_sheet": "Visits",
+      "from_column": "Client Name",
+      "to_sheet": "Client",
+      "to_column": "Company Name",
+      "match_percentage": 100.0,
+      "common_values": [
+        "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+      ]
+    },
+    {
+      "from_sheet": "Visits",
+      "from_column": "Client Name",
+      "to_sheet": "Contract",
+      "to_column": "Company Name",
+      "match_percentage": 100.0,
+      "common_values": [
+        "DEMO HELLAS \u0391\u039d\u03a9\u039d\u03a5\u039c\u0397 \u0395\u039c\u03a0\u039f\u03a1\u0399\u039a\u0397 \u0395\u03a4\u0391\u0399\u03a1\u0399\u0391  \u0395\u039c\u03a0\u039f\u03a1\u0399\u0391\u03a3"
+      ]
+    },
+    {
+      "from_sheet": "Visits",
+      "from_column": "Rerource Code",
+      "to_sheet": "Resources",
+      "to_column": "Resource Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "R00670",
+        "R00929",
+        "R00770",
+        "R00125",
+        "R01032",
+        "R00050",
+        "R00096",
+        "R00175",
+        "R01261",
+        "R00225",
+        "R00609",
+        "R00142",
+        "R01080"
+      ]
+    },
+    {
+      "from_sheet": "Resources",
+      "from_column": "Resource Code",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "Rerource Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "R00670",
+        "R00929",
+        "R00770",
+        "R01080",
+        "R00125",
+        "R01032",
+        "R00050",
+        "R00096",
+        "R00175",
+        "R01261",
+        "R00609",
+        "R00142",
+        "R00225"
+      ]
+    },
+    {
+      "from_sheet": "Resources",
+      "from_column": "Resource Code",
+      "to_sheet": "Visits",
+      "to_column": "Rerource Code",
+      "match_percentage": 100.0,
+      "common_values": [
+        "R00670",
+        "R00929",
+        "R00770",
+        "R00142",
+        "R01032",
+        "R00125",
+        "R00050",
+        "R00096",
+        "R00175",
+        "R01261",
+        "R00609",
+        "R00225",
+        "R01080"
+      ]
+    },
+    {
+      "from_sheet": "Contract Service (Project)",
+      "from_column": "Contract Service End Date",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "Service End Date",
+      "match_percentage": 87.5,
+      "common_values": [
+        "2021-05-25",
+        "2026-05-25",
+        "2022-05-25",
+        "2024-05-25",
+        "2023-05-25",
+        "2025-05-25",
+        "2021-11-16"
+      ]
+    },
+    {
+      "from_sheet": "Contract Service (Project)",
+      "from_column": "Contract Service Start Date",
+      "to_sheet": "Installation Services (Sub Pro)",
+      "to_column": "Service Start Date",
+      "match_percentage": 85.71428571428571,
+      "common_values": [
+        "2021-05-26",
+        "2025-05-26",
+        "2024-05-26",
+        "2023-05-26",
+        "2022-05-26",
+        "2020-05-26"
+      ]
+    },
+    {
+      "from_sheet": "Contract",
+      "from_column": "Contract Code",
+      "to_sheet": "Contract Service (Project)",
+      "to_column": "Conrtact Code",
+      "match_percentage": 80.0,
+      "common_values": [
+        "CON022132",
+        "CON000010",
+        "CON022133",
+        "CON001601"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "Service End Date",
+      "to_sheet": "Contract Service (Project)",
+      "to_column": "Contract Service End Date",
+      "match_percentage": 77.77777777777779,
+      "common_values": [
+        "2021-05-25",
+        "2026-05-25",
+        "2022-05-25",
+        "2024-05-25",
+        "2023-05-25",
+        "2025-05-25",
+        "2021-11-16"
+      ]
+    },
+    {
+      "from_sheet": "Installation Services (Sub Pro)",
+      "from_column": "Service Start Date",
+      "to_sheet": "Contract Service (Project)",
+      "to_column": "Contract Service Start Date",
+      "match_percentage": 75.0,
+      "common_values": [
+        "2021-05-26",
+        "2025-05-26",
+        "2024-05-26",
+        "2023-05-26",
+        "2022-05-26",
+        "2020-05-26"
+      ]
+    }
+  ],
+  "total_sheets": 7
+}

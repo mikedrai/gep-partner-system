@@ -1,0 +1,94 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+build/
+dist/
+*/build/
+*/dist/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary files
+~$*
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Database dumps
+*.sql
+!supabase/migrations/*.sql
+!supabase/seed.sql
+
+# Claude configuration (keep local settings)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Docker
+.docker/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Backup files
+*.backup
+*.bak
+
+# Excel/Word temporary files
+~$*.xlsx
+~$*.docx
+~$*.xls
+~$*.doc
+
+# CSV data files (if sensitive)
+backend/*.csv
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3

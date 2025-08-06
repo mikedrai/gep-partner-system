@@ -1,0 +1,98 @@
+GEP Service Scheduling Workflow – As-Is & Enhancement Plan
+Current Workflow Summary
+1. Contract Initiation GEP signs a contract with the client for Safety Engineer and/or Occupational Doctor and other Services. 
+Contract durations:
+	•	Typically 1 year.
+	•	Shorter for hotels and construction projects (can be days or weeks or months)
+2. Regulatory Hour Calculation – We Calculate the Assigned Hours for the Client based n the following criteria. Calculation based on SEPE (Greek labor inspection authority) regulations. 
+	•	Criteria:
+	•	Number of installations.
+	•	Total number of employees per Client / Number of employees per installation
+	•	Type of installation.
+	•	Type of work.
+	•	Output: Total required assigned hours per installation for the specific period of service.
+3. Partner Assignment - Partners (safety engineers/doctors) are assigned to installations.
+	•	Assignment based on:
+	•	Geographic proximity.
+	•	Available hours.
+	•	Cost efficiency.
+	•	Partner must accept the assignment.
+4. Schedule Planning - Partner drafts a complete schedule covering the agreed period.
+	•	Constraints:
+	•	Exact match with assigned hours.
+	•	Visits usually 1-2 hours, spaced monthly or bimonthly.
+	•	Visits must not overlap (even by one minute).
+	•	Any other specific client request – just to inform the partner
+	•	Client-specific conditions (working hours, weekends) must be observed.
+5. Approval & Locking
+	•	Partner submits schedule for GEP review.
+	•	GEP locks and uploads the final version to SEPE.net.
+	•	Once locked, no edits allowed unless formally requested and approved.
+6. Modifications
+	•	Partner submits a change request.
+	•	GEP reviews, approves, and:
+	•	Updates SEPE.net.
+	•	Informs the client of the change.
+	•	All actions must be traceable.
+7. Renewals
+	•	On contract renewal:
+	•	Compare current vs. previous employee/installation data.
+	•	Recalculate hours.
+	•	Default: assign the same partner if criteria still match.
+
+🔀 Workflow Diagram 
+	•	Form received from the client regarding installations and employees.  
+	•	Hours Calculated (SEPE-based) 
+	•	Finding availability (pre partner assignment) – cost analysis
+	•	Proposal and Contract Signed 
+	•	Importing Client & Installation Data
+	•	Partner Assigned (Location, Cost, Availability) 
+	•	Partner Accepts 
+	•	AI-Suggested Schedule Drafted for the whole year (or service date range)
+	•	Final Schedule Confirmed by Partner 
+	•	GEP Approves & Locks Schedule 
+	•	Schedule Uploaded to SEPE.net & Client Informed 
+	•	Change Request Tracked if Needed
+
+Specification Requirements 
+Functional Capabilities
+	•	Calendar interface for partner portal
+	•	Recurring scheduling 
+	•	Automatic warning / deny of overlap – the ability to be able to customize overlap setting per services would be very helpful
+	•	AI-Based Schedule Suggestion
+	•	Recommend visit plans per installation/partner using:
+	•	Partner location
+	•	Travel efficiency
+	•	Hour availability
+	•	Cost optimization
+	•	Client access rules
+	•	Cost Management Module
+	•	Budget and compare partner costs across installations.
+	•	Forecast costs.
+	•	Change Tracking & Auditing
+	•	Full audit trail of:
+	•	Schedule submissions
+	•	Modifications
+	•	GEP approvals
+	•	Client communications
+	•	Email Notification System
+	•	Alerts for:
+	•	Assignment
+	•	Approval
+	•	Schedule Lock
+	•	Change Confirmations
+	•	Partner Availability Dashboard
+	•	Track historical assignments and open capacity.
+	•	Filter by cost, location, availability etc.
+	•	Renewal Assistant
+	•	Recalculate hours upon contract renewal.
+	•	Compare current vs. previous conditions.
+	•	Reassign partner if feasible.
+	•	SEPE.net Export Interface
+	•	Export schedule in excel 
+
+Limitations:
+	•	for each installation (project) one partner is assigned for the full duration (at very rare instances more than one). Changes can occur – assigning a new partner. Etc. 
+	•	Partner Programs are scheduled in advance for the whole duration of the project. Duration of each visit might differ depending on partner availability or customer needs (usually 1 – 2 hours per visit) 
+	•	Projects are renewed and usually the same partner is assigned
+	•	Partners can request a change in visit but must be approved by the client account manager and the client must be informed of the change. 
